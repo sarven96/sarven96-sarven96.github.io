@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/image-classification-react/static/css/main.84809f3f.css",
+    "main.js": "/image-classification-react/static/js/main.d8144167.js",
+    "index.html": "/image-classification-react/index.html",
+    "main.84809f3f.css.map": "/image-classification-react/static/css/main.84809f3f.css.map",
+    "main.d8144167.js.map": "/image-classification-react/static/js/main.d8144167.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84809f3f.css",
+    "static/js/main.d8144167.js"
+  ]
+}

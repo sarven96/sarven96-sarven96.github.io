@@ -1,5 +1,5 @@
 {
-  "homepage": "http://sarven96.github.io/image-classification-react",
+  "homepage": "https://sarven96.github.io/image-classification-react",
   "name": "image-classification-react",
   "version": "0.1.0",
   "private": true,
@@ -21,8 +21,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --fix",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
