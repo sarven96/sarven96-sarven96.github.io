@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import * as mobilenet from '@tensorflow-models/mobilenet';
 import Navbar from './components/navbar';
 import TextEffect1 from './components/textEffect';
+import Spinner from './components/spinner';
 
 function App() {
     const [isModelLoading, setIsModelLoading] = useState(false);
@@ -17,9 +18,15 @@ function App() {
     const loadModel = async () => {
         setIsModelLoading(true);
         try {
+            
             const model = await mobilenet.load();
             setModel(model);
-            setIsModelLoading(false);
+            const timeout = setTimeout(() => {
+                console.log('Loading');
+                setIsModelLoading(false);
+            },4000);
+            
+            
         } catch (error) {
             console.log(error);
             setIsModelLoading(false);
@@ -58,7 +65,8 @@ function App() {
     }, [imageUrl]);
 
     if (isModelLoading) {
-        return <h2>Model Loading...</h2>;
+        return <h2 className='h-screen flex flex-col justify-center'> <Spinner/> </h2>;
+        
     }
 
     //to remove duplicate objects from history array
